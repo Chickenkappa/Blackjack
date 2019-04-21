@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>blackjack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<meta charset="UTF-8">
+<body style="background-image: url(); overflow-x: hidden; overflow-y: hidden">
+<nav class="navbar #2e7d32 green darken-3" id="start" style="z-index: 1; position: fixed; left: 0px; top: 0px">
+    <div class="nav-wrapper">
+        <a class="brand-logo center text-darken-4">&nbsp;Blackjack helper</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a></a></li>
+        </ul>
+    </div>
+</nav>
+<br><br><br><br><br>
+<form method="post">
+    <div align="center">
+        <div class="row">
+            <div class="input-field col offset-s2 s3">
+                &nbsp;<input id="first_card" name="first_card" type="number">
+                <label for="first_card">Номинал первой карты</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col offset-s2 s3">
+                &nbsp;<input id="second_card" name="second_card" type="number">
+                <label for="second_card">Номинал второй карты</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col offset-s2 s3">
+                &nbsp;<input id="sum" name="sum" type="number">
+                <label for="sum">Сумма номиналов карт на руках</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col offset-s2 s3">
+                &nbsp;<input id="dealer_card" name="dealer_card" type="number">
+                <label for="dealer_card">Номинал открытой карты диллера</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col offset-s1 s3">
+                <button class="btn #2e7d32 green darken-3" type="submit">Далее</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script>
+</script>
+<script>
+    $(document).ready(function() {
+        $('select').material_select();
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $('.tooltipped').tooltip();
+    });
+</script>
+</body>
